@@ -1,7 +1,8 @@
 def info(usuarios):
     usuario = {
             'nombre': [],
-            'nickname': []
+            'nickname': [],
+            'puntos': []
             }
     usuarios.append(usuario)
     while True:

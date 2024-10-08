@@ -2,6 +2,7 @@ import Ingresar_usuario
 import Jugar_multijugador
 
 usuarios= []
+partidas = []
 
 while True:
     print ("""
