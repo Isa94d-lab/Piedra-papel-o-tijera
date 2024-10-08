@@ -1,11 +1,15 @@
 import Ingresar_usuario
+import Jugar_multijugador
+
+usuarios= []
+
 while True:
     print ("""
-        -----------------
-          THE CHACHIPUN  
-        -----------------
+        -------------------
+           THE CHACHIPUN  
+        -------------------
     """)
-    usuarios = []
+
     print("BIENVENID@! Que te gustaria hacer?")
     print("1. Ingresar usuario")
     print("2. Jugar multijugador")
@@ -17,13 +21,13 @@ while True:
 
     if opcion == "1":
         Ingresar_usuario.info(usuarios)
-    if opcion == "2":
+    elif opcion == "2":
+        Jugar_multijugador.MostrarUsuarios(usuarios)
+    elif opcion == "3":
+        pass 
+    elif opcion == "4":
         pass
-    if opcion == "3":
-        pass
-    if opcion == "4":
-        pass
-    if opcion == "5":
+    elif opcion == "5":
         break
     else: 
         print("Ingresaste una respuesta INCORRECTA, Intenta de nuevo")

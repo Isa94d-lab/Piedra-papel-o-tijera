@@ -17,7 +17,7 @@ def info(usuarios):
 
         if nickname_delusuario in usuario["nickname"]:
             print("Este nickname YA ESTA REGISTRADO, Ingresa uno diferente")
-            w= input("Preciona ENTER para volver a intentar -> ") 
+            w= input("Preciona ENTER para volver a intentar -> ")
             continue
         else:
             usuario['nombre'].append(nombre_delusuario)
@@ -27,4 +27,3 @@ def info(usuarios):
             if ingresar_otro != '1':
                 w=input("Presiona ENTER para continuar -> ")
                 break
-    print(usuario)
