@@ -1,5 +1,5 @@
-import Ingresar_usuario
-import Jugar_multijugador
+import modules.Ingresar_usuario as Ingresar_usuario
+import modules.Jugar_multijugador as Jugar_multijugador
 
 usuarios= []
 partidas = []
