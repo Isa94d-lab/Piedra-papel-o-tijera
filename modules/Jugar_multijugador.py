@@ -1,3 +1,4 @@
+import modules.puntuaciones as puntuaciones 
 def MostrarUsuarios(usuarios):
     while True:
         num = 0
@@ -7,12 +8,16 @@ def MostrarUsuarios(usuarios):
         --------------------------
         """)
         print("Jugadores Disponibles:")
+        #Mostramos los jugadores disponibles 
         for usuario in usuarios:
-            for i in range(len(usuario['nickname'])):
-                print(f"{num+1}. {usuario['nickname'][num]}") 
-                num += 1
+            while i <= (len(usuario['nickname'])):
+                for i in range(len(usuario['nickname'])):
+                    print(f"{num+1}. {usuario['nickname'][num]}") 
+                    num += 1
+            #Le pedimos a un usuario que seleccione el primero
             print("Segun los numeros de la tabla ingresa el nickname del primer jugador: ") 
             primer_jugador = int(input("-> ")) -1
+            #Ahora que seleccione el segundo 
             print("Ingresa el segundo jugador: ")
             segundo_jugador = int(input("-> ")) -1
 
@@ -38,9 +43,6 @@ def MostrarUsuarios(usuarios):
             partidas_ganadas_jugador1 = 0 
             partidas_ganadas_jugador2 = 0
 
-            victoria_jugador1 = 0
-            victoria_jugador2 = 0
-
 
             while True: 
                 print("""
@@ -48,7 +50,7 @@ def MostrarUsuarios(usuarios):
                     GO!     
                 ----------
                 """)
-                
+                #Le pedimos al primer usuario que seleccione una de tres opciones
                 print(f"Ingresa la opcion de {usuario['nickname'][primer_jugador]}")
                 print("1. Piedra / 2. Papel / 3. Tijera")
                 primera_jugada_jugador1 = input("-> ")
@@ -59,7 +61,7 @@ def MostrarUsuarios(usuarios):
                 elif primera_jugada_jugador1 == '3':
                     escogio = 'Tijera'
 
-
+                #Ahora le pedimos que lo haga el segundo usuario
                 print(f"Ingresa la opcion de {usuario['nickname'][segundo_jugador]}")
                 print("1. Piedra / 2. Papel / 3. Tijera")
                 primera_jugada_jugador2 = input("-> ")
@@ -70,6 +72,7 @@ def MostrarUsuarios(usuarios):
                 elif primera_jugada_jugador2 == '3':
                     escogio = 'Tijera'
 
+                #Si las opciones ingresadas por ambos usarios son iguales, sera un empate
                 if primera_jugada_jugador1 == primera_jugada_jugador2:
                     print("EMPATE")
                     
@@ -83,10 +86,11 @@ def MostrarUsuarios(usuarios):
                     ganador = {usuario['nickname'][segundo_jugador]}
 
 
-
+                #Dependiendo del ganador se le añadira una partida ganada al contador
                 if ganador == {usuario['nickname'][primer_jugador]}:
                     partidas_ganadas_jugador1 += 1
             
+        
                     if escudo_jugador2 == False and partidas_ganadas_jugador2 >= 1: 
                         partidas_ganadas_jugador2 =0
                     
@@ -123,10 +127,13 @@ def MostrarUsuarios(usuarios):
 
                 if partidas_ganadas_jugador1 == 3:
                     print(f"EL JUGADOR DEFINITIVO ES {usuario['nickname'][primer_jugador]}")
-                    w=input("Pulsa ENTER para continuar -> ")
+                    puntuaciones.agregar_puntuacion(usuario['nickname'][primer_jugador], partidas_ganadas_jugador1)
+                    input("Pulsa ENTER para continuar -> ")
                     break 
                 elif partidas_ganadas_jugador2 == 3:
                     print(f"EL JUGADOR DEFINITIVO ES {usuario['nickname'][segundo_jugador]}")
-                    w=input("Pulsa ENTER para continuar -> ")
-                    break
+                    puntuaciones.agregar_puntuacion(usuario['nickname'][segundo_jugador], partidas_ganadas_jugador2)
+                    input("Pulsa ENTER para continuar -> ")
+                break
+
         break 

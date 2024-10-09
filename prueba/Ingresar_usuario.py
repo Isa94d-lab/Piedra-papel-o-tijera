@@ -27,7 +27,7 @@ def info(usuarios):
             usuario['nombre'].append(nombre_delusuario)
             usuario['nickname'].append(nickname_delusuario)
 
-            # Llamar a la funcion para guardar en JSON
+            # Llamar a la función para guardar en JSON
             guardar_usuarios_en_json(usuarios)
 
             ingresar_otro = input("Te gustaria ingresar otro Usuario? SI(1) NO(2) -> ")
