@@ -3,12 +3,13 @@
 =======
 
 ## Descripcion 📌
-El proposito de este proyecto de Pyton es jugar un simple piedra papel o tijera. Para el cual se le mostrara un interfaz en la que el usuario tendra distintas opciones
+El proposito de este proyecto de Pyton es jugar un simple piedra papel o tijera. El cual busca permitir que se cree un nombre de jugador y permitir que al momento de jugar contra IA u otro Jugador se le permita seleccionar el jugador de su preferencia
 1. Ingresar un usuario
 2. Jugar Multijugador
 3. Jugar contra IA
 4. Puntajes obtenidos
 5. Salir
+6. Para el cual se le mostrara un interfaz en la que el usuario tendra distintas opciones
 Dependiendo de la eleccion del usuario se le redigira a otra pagia
 
 Opcion 1:
