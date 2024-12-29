@@ -1,30 +1,31 @@
 # Piedra, papel o tijera
 
-=================================================================================
+===========================================================================================
 
 ## Descripcion 📌
-El proposito de este proyecto de Pyton es simular un juego simple de piedra papel o tijera. El cual busca permitir que por medio de una interfaz, se cree un nombre de jugador y permitir que al momento de jugar contra IA u otro Jugador se le permita seleccionar el jugador/es de su preferencia y segun los resultados de la partida (Gana la partida el jugador que consiga ganarle a su contrincante 3 veces seguidas. Teniendo en cuenta que cuando un jugador gana 2 rondas seguidas se debloqueara un escudo que lo protegera si pierde en la siguiente ronda, lo que le permititra al jugador GANAR la partida en el siguiente turno) y mostrar los puntajes obtenidos.
+Este proyecto en Python simula el juego clásico "Piedra, Papel o Tijera", permitiendo jugar contra una IA o en modo multijugador. El objetivo es ganar 3 rondas consecutivas para ganar la partida. Ademas, el juego introduce una mecanica especial: si un jugador gana 2 rondas consecutivas, desbloquea un escudo que lo protege de perder su progreso en la siguiente ronda.
 
 ## Funcionalidades del proyecto ⛏️
 
-Al momento de ejecutar el programa aparecera esta interfaz:
-
-1. Ingresar un usuario
-2. Jugar Multijugador
-3. Jugar contra IA
-4. Puntajes obtenidos
-5. Salir
-
-- Opcion 1: Te pedira ingresar un nombre para crear un usuario
-- Opcion 2: Segun los nombres u "usuarios" ingresados anteriormente, se seleccionaran los Jugadore 1 y 2 para dar incio el juego. A cada jugador se le daran 3 opciones: 1. Piedra 2. Papel 3. Tijera, dependiendo de cada eleccion se ganara o perdera la ronda.
-- Opcion 3: Segun los nombres u "usuarios" ingresados anteriormente, Despues de seleccionar el jugador deseado, se enfrentara a una IA con las mismas reglas, se le daran 3 opciones: 1. Piedra 2. Papel 3. Tijera, dependiendo de cada eleccion se ganara o perdera la ronda.
-- Opcion 4: Se mostrara una tabla con los puntajes de cada Jugador, sus partidas ganadas
+Al ejecutar el programa se mostrara una interfaz con las siguientes opciones:
+1. **Ingresar un usuario:** Se solicitara ingresar un nombre para crear un usuario
+   
+3. **Jugar Multijugador:** Se seleccionaran los Jugadores 1 y 2 (segun los nombres ingresados anteriormente) para dar incio el juego. A cada jugador se le daran 3 opciones: 1. Piedra 2. Papel 3. Tijera, dependiendo de cada eleccion inidividual de los jugadores se definira quien gano o perdio la ronda segun las reglas basica del juego.
+   
+5. **Jugar contra IA:** Se selecciona un jugador el cual se enfrentara a una IA con las mismas opciones y reglas, dependiendo de cada eleccion se ganara o perdera la ronda segun las reglas clasicas.
+   
+7. **Puntajes obtenidos:** Se mostrara una tabla con los puntajes de cada Jugador segun sus partidas ganadas
+   
+9. **Salir:** Permitira al usuario salir del programa
 
 ## Caracteristicas 📦
-Se utilizaron multiples clases para darle un mejor manejo al codigo y asi llevar a cabo tareas minusculas como lo pueden ser espacios dentro de textos u el cambio de color en una parte especifica del texto, entre otras cosas
+-**Modo multijugador**
+-**Modo contra IA**
+-**Mecanica de escudo**
+-**Interfaz**
 
-## Tecnologias Utilisadas 🚀
-- Lenguaje: Pyton (El codigo unicamente hace uso del lenguaje de programacion Pyton)
+## Tecnologias Utilizadas 🚀
+- Lenguaje: Python (El codigo unicamente hace uso del lenguaje de programacion Python)
 
 ## Realizado por ✒️
 Isabella Stephani Galvis Sandoval
