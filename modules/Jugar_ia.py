@@ -13,7 +13,7 @@ def info(usuarios):
             for i in range(len(usuario['nickname'])):
                 print(f"{num+1}. {usuario['nickname'][num]}") 
                 num += 1
-            print("Segun los numeros de la tabla, ingresa el nickname del jugador que se enfrentara a la maquina: ") 
+            print("Selecciona el nickname del jugador que se enfrentara a la maquina: ") 
             primer_jugador = int(input("-> ")) -1
 
             partidas = {
@@ -91,7 +91,7 @@ def info(usuarios):
                     
                     partidas['ganadores'].append(ganador)
 
-#/////////////////////////////////////////////////////////////////////////////////
+#////////////////////////////////////////////////////////////////////////////////////////
 
                 elif ganador == 'LA MAQUINA':
                     partidas_ganadas_maquina += 1
@@ -129,3 +129,5 @@ def info(usuarios):
                     w=input("Pulsa ENTER para continuar -> ")
                     break
         break 
+
+    #

@@ -9,11 +9,11 @@ def MostrarUsuarios(usuarios):
         """)
         print("Jugadores Disponibles:")
         #Mostramos los jugadores disponibles 
+        #Hola
         for usuario in usuarios:
-            while i <= (len(usuario['nickname'])):
-                for i in range(len(usuario['nickname'])):
-                    print(f"{num+1}. {usuario['nickname'][num]}") 
-                    num += 1
+            for i in range(len(usuario['nickname'])):
+                print(f"{num+1}. {usuario['nickname'][num]}") 
+                num += 1
             #Le pedimos a un usuario que seleccione el primero
             print("Segun los numeros de la tabla ingresa el nickname del primer jugador: ") 
             primer_jugador = int(input("-> ")) -1
@@ -87,7 +87,7 @@ def MostrarUsuarios(usuarios):
 
 
                 #Dependiendo del ganador se le añadira una partida ganada al contador
-                if ganador == {usuario['nickname'][primer_jugador]}:
+                if 1 == {usuario['nickname'][primer_jugador]}:
                     partidas_ganadas_jugador1 += 1
             
         
@@ -134,6 +134,6 @@ def MostrarUsuarios(usuarios):
                     print(f"EL JUGADOR DEFINITIVO ES {usuario['nickname'][segundo_jugador]}")
                     puntuaciones.agregar_puntuacion(usuario['nickname'][segundo_jugador], partidas_ganadas_jugador2)
                     input("Pulsa ENTER para continuar -> ")
-                break
-
+                    break
+            break
         break 
