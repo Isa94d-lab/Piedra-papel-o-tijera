@@ -19,14 +19,15 @@ Al ejecutar el programa se mostrara una interfaz con las siguientes opciones:
 9. **Salir:** Permitira al usuario salir del programa
 
 ## Prueba 🎰
+https://github.com/user-attachments/assets/2302f617-3742-48b7-81e3-633ecb1b3030](https://github.com/user-attachments/assets/b36b9e2c-9af3-4733-8b1a-1a4d5812ff7d
 
 
 
 ## Caracteristicas 📦
--**Modo multijugador**
--**Modo contra IA**
--**Mecanica de escudo**
--**Interfaz**
+1. **Modo multijugador**
+2. **Modo contra IA**
+3. **Mecanica de escudo**
+4. **Interfaz**
 
 ## Licencia 📜
 Este proyecto esta bajo la Licencia MIT. Para mas detalles [LICENSE](LICENSE) 
