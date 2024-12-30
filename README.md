@@ -18,11 +18,18 @@ Al ejecutar el programa se mostrara una interfaz con las siguientes opciones:
    
 9. **Salir:** Permitira al usuario salir del programa
 
+## Prueba 🎰
+
+
+
 ## Caracteristicas 📦
 -**Modo multijugador**
 -**Modo contra IA**
 -**Mecanica de escudo**
 -**Interfaz**
+
+## Licencia 📜
+Este proyecto esta bajo la Licencia MIT. Para mas detalles [LICENSE](LICENSE) 
 
 ## Tecnologias Utilizadas 🚀
 - Lenguaje: Python (El codigo unicamente hace uso del lenguaje de programacion Python)
