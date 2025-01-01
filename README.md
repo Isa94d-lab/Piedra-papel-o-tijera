@@ -21,13 +21,24 @@ Al ejecutar el programa se mostrara una interfaz con las siguientes opciones:
 ## Prueba 🎰
 https://github.com/user-attachments/assets/2302f617-3742-48b7-81e3-633ecb1b3030](https://github.com/user-attachments/assets/b36b9e2c-9af3-4733-8b1a-1a4d5812ff7d
 
-
-
 ## Caracteristicas 📦
 1. **Modo multijugador**
 2. **Modo contra IA**
 3. **Mecanica de escudo**
 4. **Interfaz**
+
+## Instalacion 📫
+
+1. Prerrequisitos
+- Python 3.8+: Asegurate de tener Python instalado en tu sistema. Puedes descargarlo desde [python.org.](https://www.python.org/)
+- Git: Necesitaras Git para clonar el repositorio. Descargalo desde [git](https://git-scm.com/) 
+- Un editor de texto como VSCode o cualquier otro de tu preferencia 
+
+2. Codigos en la terminal del editor de texto para instalar el proyecto
+- git clone https://github.com/Isa94d-lab/Piedra-papel-o-tijera.git
+- cd Piedra-papel-o-tijera
+
+3. Ejecutar el codigo desde el archivo *"Interfaz.py"*
 
 ## Licencia 📜
 Este proyecto esta bajo la Licencia MIT. Para mas detalles [LICENSE](LICENSE) 
